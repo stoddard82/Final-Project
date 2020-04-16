@@ -1,0 +1,125 @@
+id,cityrank,city,state,averagesalary,mediahousingcost,medianrent,unemploymentrate
+1,1,Austin,Texas,"$51,840 ","$291,533 ","$1,155 ",2.6
+2,2,Denver,Colorado,"$57,400 ","$393,842 ","$1,203 ",2.4
+3,3,Colorado Springs,Colorado,"$50,050 ","$286,700 ","$1,070 ",3
+4,4,Fayetteville,Arkansas,"$45,830 ","$177,942 ",$778 ,2.5
+5,5,Des Moines,Iowa,"$50,600 ","$178,942 ",$857 ,2.6
+6,6,Minneapolis,Minnesota,"$56,030 ","$237,367 ","$1,001 ",3
+7,7,San Francisco,California,"$69,700 ","$768,517 ","$1,673 ",2.5
+8,8,Portland,Oregon,"$55,330 ","$375,425 ","$1,118 ",3.5
+9,9,Seattle,Washington,"$63,120 ","$442,333 ","$1,297 ",3.2
+10,10,Raleigh,North Carolina,"$53,788 ","$249,294 ",$991 ,3.2
+11,11,Huntsville,Alabama,"$53,600 ","$167,300 ",$779 ,2.3
+12,12,Madison,Wisconsin,"$52,190 ","$247,967 ",$958 ,2.6
+13,13,Grand Rapids,Michigan,"$44,770 ","$181,533 ",$826 ,3.1
+14,14,San Jose,California,"$77,180 ","$1,080,017 ","$1,940 ",2.4
+15,15,Nashville,Tennessee,"$47,110 ","$248,883 ",$951 ,2.6
+16,16,Ashville,North Carolina,"$41,210 ","$248,500 ",$849 ,3
+17,17,Boise,Idaho,"$43,880 ","$221,475 ",$879 ,2.6
+18,18,Sarasota,Florida,"$42,680 ","$237,260 ","$1,089 ",3.3
+19,19,Washington,District of Columbia,"$69,210 ","$376,767 ","$1,600 ",2.9
+20,20,Charlotte,North Carolina,"$50,150 ","$213,983 ",$935 ,3.4
+21,21,Dallas,Texas,"$51,250 ","$248,375 ","$1,022 ",3.1
+22,22,Greenville,South Carolina,"$43,230 ","$172,067 ",$787 ,2.2
+23,23,Portland,Maine,"$48,970 ","$223,367 ",$975 ,2.4
+24,24,Salt Lake City,Utah,"$47,272 ","$324,198 ",$963 ,2.3
+25,25,Melbourne,Florida,"$48,240 ","$198,425 ",$971 ,3.5
+26,26,Phoenix,Arizona,"$49,500 ","$234,183 ","$1,032 ",3.9
+27,27,Boston,Massachusetts,"$65,420 ","$423,450 ","$1,335 ",2.6
+28,28,Albany,New York,"$52,770 ","$201,533 ",$956 ,3.6
+29,29,Lexington,Kentucky,"$43,720 ",,$808 ,3.4
+30,30,Houston,Texas,"$53,820 ","$223,875 ",$995 ,3.7
+31,31,Winston-Salem,North Carolina,"$44,910 ","$145,725 ",$732 ,3.5
+32,32,Omaha,Nebraska,"$47,660 ","$171,164 ",$865 ,3
+33,33,Reno,Nevada,"$46,330 ","$351,500 ",$946 ,3
+34,34,San Antonio,Texas,"$46,200 ","$211,800 ",$949 ,3
+35,35,Fort Myers,Florida,"$41,380 ","$219,200 ","$1,035 ",3.4
+36,36,San Diego,California,"$56,410 ","$555,325 ","$1,467 ",3
+37,37,Pensacola,Florida,"$41,200 ","$175,875 ",$952 ,2.9
+38,38,IndIanapolis,Indiana,"$48,030 ","$173,700 ",$859 ,2.9
+39,39,Cincinnati,Ohio,"$48,890 ","$161,483 ",$787 ,3.7
+40,40,Fort Wayne,Indiana,"$43,590 ","$146,200 ",$714 ,3.1
+41,41,Lansing,Michigan,"$47,990 ","$136,342 ",$834 ,3.3
+42,42,Jacksonville,Florida,"$45,760 ","$174,658 ","$1,019 ",2.9
+43,43,Manchester,New Hampshire,"$52,640 ","$234,097 ","$1,132 ",2.4
+44,44,Harrisburg,Pennsylvania,"$48,270 ","$162,967 ",$903 ,4
+45,45,Charleston,South Carolina,"$44,970 ","$246,408 ","$1,054 ",2
+46,46,Knoxville,Tennessee,"$43,840 ","$172,333 ",$779 ,3.1
+47,47,Hartford,Connecticut,"$60,040 ","$215,542 ","$1,057 ",3.8
+48,48,Lancaster,Pennsylvania,"$43,760 ","$196,025 ",$957 ,3.6
+49,49,Kansas City,Missouri,"$49,460 ","$201,900 ",$894 ,3.2
+50,50,Pittsburgh,Pennsylvania,"$48,580 ","$140,855 ",$776 ,4.6
+51,51,Columbus,Ohio,"$50,020 ","$182,600 ",$887 ,3.7
+52,52,Buffalo,New York,"$48,180 ","$144,300 ",$763 ,4.4
+53,53,Richmond,Virginia,"$49,840 ","$225,767 ","$1,044 ",2.8
+54,54,Syracuse,New York,"$49,850 ","$132,500 ",$804 ,4.2
+55,55,Chattanooga,Tennessee,"$42,870 ","$164,550 ",$771 ,3.3
+56,56,Tampa,Florida,"$46,080 ","$199,717 ","$1,014 ",2.9
+57,57,Atlanta,Georgia,"$51,390 ","$209,658 ","$1,053 ",3
+58,58,Rochester,New York,"$49,570 ","$135,042 ",$848 ,4.2
+59,59,Lakeland,Florida,"$40,560 ","$171,967 ",$913 ,3.4
+60,60,Honolulu,Hawaii,"$54,030 ","$581,658 ","$1,653 ",2.1
+61,61,Milwaukee,Wisconsin,"$50,070 ","$207,400 ",$864 ,3.7
+62,62,Worcester,Massachusetts,"$53,110 ","$249,275 ",$973 ,3.1
+63,63,Orlando,Florida,"$44,410 ","$233,050 ","$1,107 ",2.7
+64,64,Louisville,Kentucky,"$45,100 ","$167,300 ",$792 ,3.7
+65,65,Spokane,Washington,"$47,320 ","$221,800 ",$833 ,5.4
+66,66,Greensboro,North Carolina,"$43,310 ","$142,758 ",$777 ,3.9
+67,67,Columbia,South Carolina,"$43,840 ","$144,192 ",$889 ,2.2
+68,68,Oklahoma City,Oklahoma,"$46,070 ","$150,925 ",$827 ,3
+69,69,Dayton,Ohio,"$48,700 ","$126,325 ",$770 ,4.1
+70,70,Anchorage,Alaska,"$58,980 ","$259,900 ","$1,237 ",5.4
+71,71,Las Vegas,Nevada,"$44,450 ","$271,767 ","$1,048 ",3.9
+72,72,Augusta,Georgia,"$44,020 ","$147,427 ",$809 ,3.2
+73,73,Santa Barbara,California,"$54,320 ","$463,750 ","$1,496 ",3.4
+74,74,Santa Rosa,California,"$53,890 ","$629,917 ","$1,456 ",2.5
+75,75,Myrtle Beach,South Carolina,"$35,890 ","$181,800 ",$883 ,3.2
+76,76,Tucson,Arizona,"$46,140 ","$203,458 ",$861 ,4.3
+77,77,Salem,Oregon,"$47,240 ","$269,367 ",$877 ,3.8
+78,78,Port St. Lucie,Florida,"$42,500 ","$211,083 ","$1,074 ",3.3
+79,79,Wichita,Kansas,"$43,880 ","$143,850 ",$769 ,3.4
+80,80,Springfield,Missouri,"$40,560 ","$146,416 ",$721 ,3.1
+81,81,St Louis,Missouri,"$49,180 ","$157,725 ",$858 ,3.3
+82,82,Sacramento,California,"$55,010 ","$389,858 ","$1,157 ",3.4
+83,83,Tulsa,Oklahoma,"$45,260 ","$149,000 ",$804 ,3.3
+84,84,Reading,Pennsylvania,"$46,100 ","$151,900 ",$885 ,4.6
+85,85,Cleveland,Ohio,"$45,589 ","$132,516 ",$782 ,4
+86,86,Springfield,Massachusetts,"$50,930 ","$199,650 ",$903 ,3.5
+87,87,York,Pennsylvania,"$44,740 ","$164,258 ",$915 ,4
+88,88,Little Rock,Arkansas,"$43,780 ","$147,150 ",$805 ,3.3
+89,89,Birmingham,Alabama,"$47,300 ","$171,450 ",$831 ,2.4
+90,90,New York,New York,"$63,079 ","$386,862 ","$1,345 ",3.7
+91,91,Providence,Rhode Island,"$52,220 ","$228,804 ",$925 ,3.4
+92,92,Detroit,Michigan,"$52,100 ","$156,508 ",$890 ,4
+93,93,Allentown,Pennsylvania,"$46,920 ","$174,858 ",$990 ,4.6
+94,94,Toledo,Ohio,"$44,180 ","$117,850 ",$710 ,4.4
+95,95,New Haven,Connecticut,"$55,450 ","$204,475 ","$1,100 ",3.6
+96,96,Lafayette,Louisianna,"$39,940 ","$165,500 ",$769 ,5
+97,97,Youngstown,Ohio,"$41,360 ","$86,850 ",$652 ,5.8
+98,98,Scranton,Pennsylvania,"$41,980 ","$100,600 ",$745 ,5.6
+99,99,Daytona Beach,Florida,"$38,710 ","$192,817 ",$990 ,3.2
+100,100,Baltimore,Maryland,"$56,400 ","$248,833 ","$1,220 ",3.4
+101,101,Killeen,Texas,"$41,770 ","$155,500 ",$888 ,3.6
+102,102,Philadelphia,Pennsylvania,"$54,940 ","$200,142 ","$1,075 ",4.3
+103,103,Virginia Beach,Virginia,"$47,410 ","$220,275 ","$1,124 ",2.9
+104,104,Chicago,Illinois,"$54,160 ","$221,983 ","$1,048 ",3.6
+105,105,Corpus Christi,Texas,"$44,710 ",,$940 ,4.2
+106,106,Albuquerque,New Mexico,"$46,400 ","$201,900 ",$850 ,4.5
+107,107,Los Angeles,California,"$53,803 ","$526,214 ","$1,362 ",3.9
+108,108,Beaumont,Texas,"$47,900 ",,$797 ,5.4
+109,109,Baton Rouge,Louisianna,"$44,500 ","$179,350 ",$873 ,4.6
+110,110,El Paso,Texas,"$38,610 ","$151,300 ",$789 ,3.8
+111,111,Jackson,Mississippi,"$42,770 ",,$838 ,4.8
+112,112,McAllen,Texas,"$36,380 ",,$699 ,6.4
+113,113,Miami,Florida,"$46,860 ","$247,113 ","$1,232 ",2.7
+114,114,New Orleans,Louisianna,"$43,310 ","$193,575 ",$947 ,4.6
+115,115,Flint,Michigan,"$45,820 ","$121,900 ",$738 ,4.7
+116,116,Brownsville,Texas,"$35,240 ",,$683 ,5.6
+117,117,Salinas,California,"$48,290 ","$581,342 ","$1,338 ",5.7
+118,118,Memphis,Tennessee,"$43,950 ","$151,900 ",$883 ,4.1
+119,119,Fresno,California,"$45,510 ","$260,733 ",$931 ,6.9
+120,120,Modesto,California,"$46,176 ","$289,168 ","$1,011 ",5.8
+121,121,Mobile,Alabama,"$43,830 ","$126,976 ",$828 ,3.4
+122,122,Shreveport,Louisianna,"$39,400 ",,$789 ,5.5
+123,123,Stockton,California,"$46,770 ","$352,350 ","$1,100 ",5.7
+124,124,Bakersfield,California,"$47,680 ","$226,908 ",$933 ,7.4

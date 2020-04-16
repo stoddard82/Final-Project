@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>City Search | Search HTML Table Data by using JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <br /><br />
+
+
+    <div class="container" style="width:900px;">
+        <h2 align="center">Search HTML Table Data by using JQuery</h2>
+        <h3 align="center">City Data</h3>
+        <br /><br />
+        <div align="center">
+            <input type="text" name="search" id="search" class="form-control" />
+        </div>
+        <br /><br />
+        <div class="table-responsive">
+            <table class="table table-bordered" id="employee_table">
+
+
+                <tr id="tr-header">
+                    <th title="5%">City Rank</th>
+                    <th title="25%">City</th>
+                    <th title="35%">State</th>
+                    <th title="Field #4">Average Salary</th>
+                    <th title="Field #5">Median Houseing Cost</th>
+                    <th title="Field #6">Median Rent</th>
+                    <th title="Field #7">Average high temperature</th>
+                    <th title="Field #8">average low temperature</th>
+                    <th title="Field #9">Median Age</th>
+                    <th title="Field #10">Unemployment Rate</th>
+                    <th title="Field #11">Metro Population</th>
+                    <th title="Field #12">Average Commute Time</th>
+                    <th title="Field #13">Latitude</th>
+                    <th title="Field #14">Longitude</th>
+                </tr>
+                <tr>
+                    <td align="right">1</td>
+                    <td><a class="city-link" href="https://www.city-data.com/"></a>Austin</td>
+                    <td>Denver  onclick="();"</td>
+                    <b>Type</b><input type=text name=type 
+                    value='Enter your user id' onclick="make_blank();">Enter User ID
+                    <td>Texas</td>
+                    <td>$51,840</td>
+                    <td>$291,533</td>
+                    <td>$1,155</td>
+                    <td align="right">79.7</td>
+                    <td align="right">54.8</td>
+                    <td align="right">34.2</td>
+                    <td align="right">2.9</td>
+                    <td align="right">2000590</td>
+                    <td align="right">26.8</td>
+                    <td align="right">30.3006</td>
+                    <td align="right">-97.7517</td>
+                </tr>
+                    <tr>
+                    <td align="right">2</td>
+                    <td>Denver</td>
+                    <td>Colorado</td>
+                    <td>$57,400</td>
+                    <td>$393,842</td>
+                    <td>$1,203</td>
+                    <td align="right">64.6</td>
+                    <td align="right">36.2</td>
+                    <td align="right">36.3</td>
+                    <td align="right">3</td>
+                    <td align="right">2798684</td>
+                    <td align="right">27.5</td>
+                    <td align="right">39.7621</td>
+                    <td align="right">-104.876</td>
+                    </tr>
+                    <tr>
+                    <td align="right">3</td>
+                    <td>Colorado Springs</td>
+                    <td>Colorado</td>
+                    <td>$50,050</td>
+                    <td>$286,700</td>
+                    <td>$1,070</td>
+                    <td align="right">62.1</td>
+                    <td align="right">35.7</td>
+                    <td align="right">34.4</td>
+                    <td align="right">3.7</td>
+                    <td align="right">695595</td>
+                    <td align="right">23.3</td>
+                    <td align="right">38.8674</td>
+                    <td align="right">-104.761</td>
+                    </tr>
+                    <tr>
+                    <td align="right">4</td>
+                    <td>Fayetteville</td>
+                    <td>Arkansas</td>
+                    <td>$45,830</td>
+                    <td>$177,942</td>
+                    <td>$778</td>
+                    <td align="right">68</td>
+                    <td align="right">45</td>
+                    <td align="right">33.9</td>
+                    <td align="right">2.7</td>
+                    <td align="right">514166</td>
+                    <td align="right">21.1</td>
+                    <td align="right">36.0713</td>
+                    <td align="right">-94.166</td>
+                    </tr>
+                    <tr>
+                    <td align="right">5</td>
+                    <td>Des Moines</td>
+                    <td>Iowa</td>
+                    <td>$50,600</td>
+                    <td>$178,942</td>
+                    <td>$857</td>
+                    <td align="right">60.3</td>
+                    <td align="right">41.4</td>
+                    <td align="right">35.7</td>
+                    <td align="right">2.4</td>
+                    <td align="right">623113</td>
+                    <td align="right">20.3</td>
+                    <td align="right">41.5725</td>
+                    <td align="right">-93.6105</td>
+                    </tr>
+                    <tr>
+                    <td align="right">6</td>
+                    <td>Minnesotaneapolis</td>
+                    <td>Minnesota</td>
+                    <td>$56,030</td>
+                    <td>$237,367</td>
+                    <td>$1,001</td>
+                    <td align="right">55.2</td>
+                    <td align="right">37.2</td>
+                    <td align="right">36.8</td>
+                    <td align="right">2.7</td>
+                    <td align="right">3526149</td>
+                    <td align="right">25.3</td>
+                    <td align="right">44.9778</td>
+                    <td align="right">-93.265</td>
+                    </tr>
+                    <tr>
+                    <td align="right">7</td>
+                    <td>San Francisco</td>
+                    <td>California</td>
+                    <td>$69,700</td>
+                    <td>$768,517</td>
+                    <td>$1,673</td>
+                    <td align="right">65.8</td>
+                    <td align="right">50.6</td>
+                    <td align="right">38.8</td>
+                    <td align="right">2.7</td>
+                    <td align="right">4641820</td>
+                    <td align="right">32.8</td>
+                    <td align="right">37.7562</td>
+                    <td align="right">-122.443</td>
+                    </tr>
+                    <tr>
+                    <td align="right">8</td>
+                    <td>Portland</td>
+                    <td>Oregon</td>
+                    <td>$55,330</td>
+                    <td>$375,425</td>
+                    <td>$1,118</td>
+                    <td align="right">63.1</td>
+                    <td align="right">45.6</td>
+                    <td align="right">37.8</td>
+                    <td align="right">3.8</td>
+                    <td align="right">2382037</td>
+                    <td align="right">26.6</td>
+                    <td align="right">45.5371</td>
+                    <td align="right">-122.65</td>
+                    </tr>
+                    <tr>
+                    <td align="right">9</td>
+                    <td>Seattle</td>
+                    <td>Washington</td>
+                    <td>$63,120</td>
+                    <td>$442,333</td>
+                    <td>$1,297</td>
+                    <td align="right">60.2</td>
+                    <td align="right">45</td>
+                    <td align="right">37.1</td>
+                    <td align="right">3.9</td>
+                    <td align="right">3735216</td>
+                    <td align="right">30.1</td>
+                    <td align="right">47.6211</td>
+                    <td align="right">-122.324</td>
+                    </tr>
+                    <tr>
+                    <td align="right">10</td>
+                    <td>Raleigh</td>
+                    <td>North Carolina</td>
+                    <td>$53,788</td>
+                    <td>$249,294</td>
+                    <td>$991</td>
+                    <td align="right">71.6</td>
+                    <td align="right">49.9</td>
+                    <td align="right">36.4</td>
+                    <td align="right">3.4</td>
+                    <td align="right">1824266</td>
+                    <td align="right">25.3</td>
+                    <td align="right">35.7796</td>
+                    <td align="right">-78.6382</td>
+                    </tr>
+                    <tr>
+                    <td align="right">11</td>
+                    <td>Huntsville</td>
+                    <td>Alabama</td>
+                    <td>$53,600</td>
+                    <td>$167,300</td>
+                    <td>$779</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">38.4</td>
+                    <td align="right">3.5</td>
+                    <td align="right">444908</td>
+                    <td align="right">22.1</td>
+                    <td align="right">34.6988</td>
+                    <td align="right">-86.6412</td>
+                    </tr>
+                    <tr>
+                    <td align="right">12</td>
+                    <td>Madison</td>
+                    <td>Wisconsin</td>
+                    <td>$52,190</td>
+                    <td>$247,967</td>
+                    <td>$958</td>
+                    <td align="right">55.9</td>
+                    <td align="right">36.8</td>
+                    <td align="right">35.9</td>
+                    <td align="right">2.2</td>
+                    <td align="right">640072</td>
+                    <td align="right">21.7</td>
+                    <td align="right">43.0827</td>
+                    <td align="right">-89.3923</td>
+                    </tr>
+                    <tr>
+                    <td align="right">13</td>
+                    <td>Grand Rapids</td>
+                    <td>Michigan</td>
+                    <td>$44,770</td>
+                    <td>$181,533</td>
+                    <td>$826</td>
+                    <td align="right">57.9</td>
+                    <td align="right">40.2</td>
+                    <td align="right">35.7</td>
+                    <td align="right">3.1</td>
+                    <td align="right">1039182</td>
+                    <td align="right">21.8</td>
+                    <td align="right">42.9615</td>
+                    <td align="right">-85.6557</td>
+                    </tr>
+                    <tr>
+                    <td align="right">14</td>
+                    <td>San Jose</td>
+                    <td>California</td>
+                    <td>$77,180</td>
+                    <td>$1,080,017</td>
+                    <td>$1,940</td>
+                    <td align="right">72.4</td>
+                    <td align="right">50.6</td>
+                    <td align="right">36.9</td>
+                    <td align="right">2.6</td>
+                    <td align="right">1969897</td>
+                    <td align="right">28.2</td>
+                    <td align="right">37.3021</td>
+                    <td align="right">-121.849</td>
+                    </tr>
+                    <tr>
+                    <td align="right">15</td>
+                    <td>Nashville</td>
+                    <td>Tennessee</td>
+                    <td>$47,110</td>
+                    <td>$248,883</td>
+                    <td>$951</td>
+                    <td align="right">69.7</td>
+                    <td align="right">48.9</td>
+                    <td align="right">36.3</td>
+                    <td align="right">2.8</td>
+                    <td align="right">1830410</td>
+                    <td align="right">27.3</td>
+                    <td align="right">36.1715</td>
+                    <td align="right">-86.7843</td>
+                    </tr>
+                    <tr>
+                    <td align="right">16</td>
+                    <td>Ashville</td>
+                    <td>North Carolina</td>
+                    <td>$41,210</td>
+                    <td>$248,500</td>
+                    <td>$849</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">3.2</td>
+                    <td align="right">445625</td>
+                    <td align="right">21.2</td>
+                    <td align="right">35.5951</td>
+                    <td align="right">-82.5515</td>
+                    </tr>
+                    <tr>
+                    <td align="right">17</td>
+                    <td>Boise</td>
+                    <td>Idaho</td>
+                    <td>$43,880</td>
+                    <td>$221,475</td>
+                    <td>$879</td>
+                    <td align="right">63.5</td>
+                    <td align="right">41.2</td>
+                    <td align="right">35.8</td>
+                    <td align="right">2.6</td>
+                    <td align="right">677346</td>
+                    <td align="right">22</td>
+                    <td align="right">43.6007</td>
+                    <td align="right">-116.231</td>
+                    </tr>
+                    <tr>
+                    <td align="right">18</td>
+                    <td>Sarasota</td>
+                    <td>Florida</td>
+                    <td>$42,680</td>
+                    <td>$237,260</td>
+                    <td>$1,089</td>
+                    <td align="right">81.7</td>
+                    <td align="right">64.1</td>
+                    <td align="right">51.6</td>
+                    <td align="right">3.3</td>
+                    <td align="right">768381</td>
+                    <td align="right">24.5</td>
+                    <td align="right">27.3386</td>
+                    <td align="right">-82.543</td>
+                    </tr>
+                    <tr>
+                    <td align="right">19</td>
+                    <td>Washington</td>
+                    <td>District of Columbia</td>
+                    <td>$69,210</td>
+                    <td>$376,767</td>
+                    <td>$1,600</td>
+                    <td align="right">66.7</td>
+                    <td align="right">49.5</td>
+                    <td align="right">36.7</td>
+                    <td align="right">3.4</td>
+                    <td align="right">6090196</td>
+                    <td align="right">34.6</td>
+                    <td align="right">38.9072</td>
+                    <td align="right">-77.0369</td>
+                    </tr>
+                    <tr>
+                    <td align="right">20</td>
+                    <td>Charlotte</td>
+                    <td>North Carolina</td>
+                    <td>$50,150</td>
+                    <td>$213,983</td>
+                    <td>$935</td>
+                    <td align="right">70.9</td>
+                    <td align="right">48.7</td>
+                    <td align="right">37.3</td>
+                    <td align="right">3.6</td>
+                    <td align="right">2427024</td>
+                    <td align="right">26.5</td>
+                    <td align="right">35.2079</td>
+                    <td align="right">-80.8304</td>
+                    </tr>
+                    <tr>
+                    <td align="right">21</td>
+                    <td>Dallas</td>
+                    <td>Texas</td>
+                    <td>$51,250</td>
+                    <td>$248,375</td>
+                    <td>$1,022</td>
+                    <td align="right">76.6</td>
+                    <td align="right">55.8</td>
+                    <td align="right">34.6</td>
+                    <td align="right">3.5</td>
+                    <td align="right">7104415</td>
+                    <td align="right">28.1</td>
+                    <td align="right">35.5951</td>
+                    <td align="right">-82.5515</td>
+                    </tr>
+                    <tr>
+                    <td align="right">22</td>
+                    <td>Greenville</td>
+                    <td>South Carolina</td>
+                    <td>$43,230</td>
+                    <td>$172,067</td>
+                    <td>$787</td>
+                    <td align="right">70.3</td>
+                    <td align="right">50.5</td>
+                    <td align="right">38.5</td>
+                    <td align="right">3.3</td>
+                    <td align="right">872463</td>
+                    <td align="right">22.5</td>
+                    <td align="right">34.8362</td>
+                    <td align="right">-82.3649</td>
+                    </tr>
+                    <tr>
+                    <td align="right">23</td>
+                    <td>Portland</td>
+                    <td>Maine</td>
+                    <td>$48,970</td>
+                    <td>$223,367</td>
+                    <td>$975</td>
+                    <td align="right">55.7</td>
+                    <td align="right">37.1</td>
+                    <td align="right">43.4</td>
+                    <td align="right">2.6</td>
+                    <td align="right">525776</td>
+                    <td align="right">24.8</td>
+                    <td align="right">43.6773</td>
+                    <td align="right">-70.2715</td>
+                    </tr>
+                    <tr>
+                    <td align="right">24</td>
+                    <td>Salt Lake City</td>
+                    <td>Utah</td>
+                    <td>$47,272</td>
+                    <td>$324,198</td>
+                    <td>$963</td>
+                    <td align="right">63.8</td>
+                    <td align="right">41.6</td>
+                    <td align="right">30.2</td>
+                    <td align="right">3</td>
+                    <td align="right">2399521</td>
+                    <td align="right">22.2</td>
+                    <td align="right">40.7774</td>
+                    <td align="right">-111.93</td>
+                    </tr>
+                    <tr>
+                    <td align="right">25</td>
+                    <td>Melbourne</td>
+                    <td>Florida</td>
+                    <td>$48,240</td>
+                    <td>$198,425</td>
+                    <td>$971</td>
+                    <td align="right">81.9</td>
+                    <td align="right">62.8</td>
+                    <td align="right">47.1</td>
+                    <td align="right">3.5</td>
+                    <td align="right">568183</td>
+                    <td align="right">24.5</td>
+                    <td align="right">28.1085</td>
+                    <td align="right">-80.6627</td>
+                    </tr>
+                    <tr>
+                    <td align="right">26</td>
+                    <td>Phoenix</td>
+                    <td>Arizona</td>
+                    <td>$49,500</td>
+                    <td>$234,183</td>
+                    <td>$1,032</td>
+                    <td align="right">86.6</td>
+                    <td align="right">63.4</td>
+                    <td align="right">36.2</td>
+                    <td align="right">4.1</td>
+                    <td align="right">4561038</td>
+                    <td align="right">26.2</td>
+                    <td align="right">33.5722</td>
+                    <td align="right">-112.089</td>
+                    </tr>
+                    <tr>
+                    <td align="right">27</td>
+                    <td>Boston</td>
+                    <td>Massachusetts</td>
+                    <td>$65,420</td>
+                    <td>$423,450</td>
+                    <td>$1,335</td>
+                    <td align="right">58.7</td>
+                    <td align="right">44</td>
+                    <td align="right">38.7</td>
+                    <td align="right">3.1</td>
+                    <td align="right">4771936</td>
+                    <td align="right">31</td>
+                    <td align="right">42.3188</td>
+                    <td align="right">-71.0846</td>
+                    </tr>
+                    <tr>
+                    <td align="right">28</td>
+                    <td>Albany</td>
+                    <td>New York</td>
+                    <td>$52,770</td>
+                    <td>$201,533</td>
+                    <td>$956</td>
+                    <td align="right">57.8</td>
+                    <td align="right">38.6</td>
+                    <td align="right">40</td>
+                    <td align="right">3.9</td>
+                    <td align="right">881862</td>
+                    <td align="right">23.1</td>
+                    <td align="right">42.6526</td>
+                    <td align="right">-73.7562</td>
+                    </tr>
+                    <tr>
+                    <td align="right">29</td>
+                    <td>Lexington</td>
+                    <td>Kentucky</td>
+                    <td>$43,720</td>
+                    <td> </td>
+                    <td>$808</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">35.8</td>
+                    <td align="right">3.4</td>
+                    <td align="right">500689</td>
+                    <td align="right">21.4</td>
+                    <td align="right">38.0406</td>
+                    <td align="right">-84.5037</td>
+                    </tr>
+                    <tr>
+                    <td align="right">30</td>
+                    <td>Houston</td>
+                    <td>Texas</td>
+                    <td>$53,820</td>
+                    <td>$223,875</td>
+                    <td>$995</td>
+                    <td align="right">78.9</td>
+                    <td align="right">61.5</td>
+                    <td align="right">34</td>
+                    <td align="right">4.3</td>
+                    <td align="right">6636208</td>
+                    <td align="right">29.7</td>
+                    <td align="right">29.7869</td>
+                    <td align="right">-95.3905</td>
+                    </tr>
+                    <tr>
+                    <td align="right">31</td>
+                    <td>Winston-Salem</td>
+                    <td>North Carolina</td>
+                    <td>$44,910</td>
+                    <td>$145,725</td>
+                    <td>$732</td>
+                    <td align="right">69.7</td>
+                    <td align="right">49.4</td>
+                    <td align="right">40.4</td>
+                    <td align="right">3.7</td>
+                    <td align="right">658195</td>
+                    <td align="right">23.4</td>
+                    <td align="right">36.1029</td>
+                    <td align="right">-80.261</td>
+                    </tr>
+                    <tr>
+                    <td align="right">32</td>
+                    <td>Omaha</td>
+                    <td>Nebraska</td>
+                    <td>$47,660</td>
+                    <td>$171,164</td>
+                    <td>$865</td>
+                    <td align="right">61.8</td>
+                    <td align="right">40.2</td>
+                    <td align="right">35.4</td>
+                    <td align="right">2.9</td>
+                    <td align="right">914190</td>
+                    <td align="right">20.2</td>
+                    <td align="right">41.2628</td>
+                    <td align="right">-96.0498</td>
+                    </tr>
+                    <tr>
+                    <td align="right">33</td>
+                    <td>Reno</td>
+                    <td>Nevada</td>
+                    <td>$46,330</td>
+                    <td>$351,500</td>
+                    <td>$946</td>
+                    <td align="right">92.1</td>
+                    <td align="right">57.7</td>
+                    <td align="right">38.2</td>
+                    <td align="right">3.7</td>
+                    <td align="right">449442</td>
+                    <td align="right">21.4</td>
+                    <td align="right">39.5497</td>
+                    <td align="right">-119.848</td>
+                    </tr>
+                    <tr>
+                    <td align="right">34</td>
+                    <td>San Antonio</td>
+                    <td>Texas</td>
+                    <td>$46,200</td>
+                    <td>$211,800</td>
+                    <td>$949</td>
+                    <td align="right">80.2</td>
+                    <td align="right">58.6</td>
+                    <td align="right">34.4</td>
+                    <td align="right">3.3</td>
+                    <td align="right">2377507</td>
+                    <td align="right">26</td>
+                    <td align="right">29.4658</td>
+                    <td align="right">-98.5254</td>
+                    </tr>
+                    <tr>
+                    <td align="right">35</td>
+                    <td>Fort Myers</td>
+                    <td>Florida</td>
+                    <td>$41,380</td>
+                    <td>$219,200</td>
+                    <td>$1,035</td>
+                    <td align="right">84.3</td>
+                    <td align="right">64.4</td>
+                    <td align="right">47.8</td>
+                    <td align="right">3.4</td>
+                    <td align="right">700165</td>
+                    <td align="right">27.2</td>
+                    <td align="right">26.6195</td>
+                    <td align="right">-81.8303</td>
+                    </tr>
+                    <tr>
+                    <td align="right">36</td>
+                    <td>San Diego</td>
+                    <td>California</td>
+                    <td>$56,410</td>
+                    <td>$555,325</td>
+                    <td>$1,467</td>
+                    <td align="right">69.7</td>
+                    <td align="right">57.5</td>
+                    <td align="right">35.4</td>
+                    <td align="right">3.3</td>
+                    <td align="right">3283665</td>
+                    <td align="right">25.7</td>
+                    <td align="right">32.8312</td>
+                    <td align="right">-117.122</td>
+                    </tr>
+                    <tr>
+                    <td align="right">37</td>
+                    <td>Pensacola</td>
+                    <td>Florida</td>
+                    <td>$41,200</td>
+                    <td>$175,875</td>
+                    <td>$952</td>
+                    <td align="right">90</td>
+                    <td align="right">74.5</td>
+                    <td align="right">38</td>
+                    <td align="right">3.5</td>
+                    <td align="right">476702</td>
+                    <td align="right">24.2</td>
+                    <td align="right">30.4427</td>
+                    <td align="right">-87.1886</td>
+                    </tr>
+                    <tr>
+                    <td align="right">38</td>
+                    <td>IndIanapolis</td>
+                    <td>Indiana</td>
+                    <td>$48,030</td>
+                    <td>$173,700</td>
+                    <td>$859</td>
+                    <td align="right">61.8</td>
+                    <td align="right">44.4</td>
+                    <td align="right">36.3</td>
+                    <td align="right">3.2</td>
+                    <td align="right">1989032</td>
+                    <td align="right">24.8</td>
+                    <td align="right">39.7771</td>
+                    <td align="right">-86.1458</td>
+                    </tr>
+                    <tr>
+                    <td align="right">39</td>
+                    <td>Cincinnati</td>
+                    <td>Ohio</td>
+                    <td>$48,890</td>
+                    <td>$161,483</td>
+                    <td>$787</td>
+                    <td align="right">65.1</td>
+                    <td align="right">43.4</td>
+                    <td align="right">37.7</td>
+                    <td align="right">3.9</td>
+                    <td align="right">2156723</td>
+                    <td align="right">24.7</td>
+                    <td align="right">39.1412</td>
+                    <td align="right">-84.506</td>
+                    </tr>
+                    <tr>
+                    <td align="right">40</td>
+                    <td>Fort Wayne</td>
+                    <td>Indiana</td>
+                    <td>$43,590</td>
+                    <td>$146,200</td>
+                    <td>$714</td>
+                    <td align="right">84.4</td>
+                    <td align="right">62.8</td>
+                    <td align="right">36.4</td>
+                    <td align="right">3.1</td>
+                    <td align="right">429060</td>
+                    <td align="right">21.5</td>
+                    <td align="right">41.0885</td>
+                    <td align="right">-85.1436</td>
+                    </tr>
+                    <tr>
+                    <td align="right">41</td>
+                    <td>Lansing</td>
+                    <td>Michigan</td>
+                    <td>$47,990</td>
+                    <td>$136,342</td>
+                    <td>$834</td>
+                    <td align="right">57.3</td>
+                    <td align="right">39.1</td>
+                    <td align="right">35.3</td>
+                    <td align="right">3.7</td>
+                    <td align="right">472092</td>
+                    <td align="right">21.2</td>
+                    <td align="right">42.7142</td>
+                    <td align="right">-84.5601</td>
+                    </tr>
+                    <tr>
+                    <td align="right">42</td>
+                    <td>Jacksonville</td>
+                    <td>Florida</td>
+                    <td>$45,760</td>
+                    <td>$174,658</td>
+                    <td>$1,019</td>
+                    <td align="right">79.2</td>
+                    <td align="right">61.2</td>
+                    <td align="right">38.1</td>
+                    <td align="right">3.3</td>
+                    <td align="right">1447884</td>
+                    <td align="right">26.5</td>
+                    <td align="right">30.3322</td>
+                    <td align="right">-81.6749</td>
+                    </tr>
+                    <tr>
+                    <td align="right">43</td>
+                    <td>Manchester</td>
+                    <td>New Hampshire</td>
+                    <td>$52,640</td>
+                    <td>$234,097</td>
+                    <td>$1,132</td>
+                    <td align="right">82.4</td>
+                    <td align="right">62.8</td>
+                    <td align="right">40.5</td>
+                    <td align="right">2.5</td>
+                    <td align="right">406371</td>
+                    <td align="right">27.9</td>
+                    <td align="right">42.9848</td>
+                    <td align="right">-71.4447</td>
+                    </tr>
+                    <tr>
+                    <td align="right">44</td>
+                    <td>Harrisburg</td>
+                    <td>Pennsylvania</td>
+                    <td>$48,270</td>
+                    <td>$162,967</td>
+                    <td>$903</td>
+                    <td align="right">62.5</td>
+                    <td align="right">43.7</td>
+                    <td align="right">40.3</td>
+                    <td align="right">3.7</td>
+                    <td align="right">565008</td>
+                    <td align="right">22.9</td>
+                    <td align="right">40.2752</td>
+                    <td align="right">-76.8843</td>
+                    </tr>
+                    <tr>
+                    <td align="right">45</td>
+                    <td>Charleston</td>
+                    <td>South Carolina</td>
+                    <td>$44,970</td>
+                    <td>$246,408</td>
+                    <td>$1,054</td>
+                    <td align="right">76.1</td>
+                    <td align="right">55.5</td>
+                    <td align="right">36.6</td>
+                    <td align="right">3</td>
+                    <td align="right">744195</td>
+                    <td align="right">25.4</td>
+                    <td align="right">32.8151</td>
+                    <td align="right">-79.963</td>
+                    </tr>
+                    <tr>
+                    <td align="right">46</td>
+                    <td>Knoxville</td>
+                    <td>Tennessee</td>
+                    <td>$43,840</td>
+                    <td>$172,333</td>
+                    <td>$779</td>
+                    <td align="right">69.5</td>
+                    <td align="right">48.8</td>
+                    <td align="right">40.5</td>
+                    <td align="right">3.3</td>
+                    <td align="right">862490</td>
+                    <td align="right">23.6</td>
+                    <td align="right">35.9692</td>
+                    <td align="right">-83.9496</td>
+                    </tr>
+                    <tr>
+                    <td align="right">47</td>
+                    <td>Hartford</td>
+                    <td>Connecticut</td>
+                    <td>$60,040</td>
+                    <td>$215,542</td>
+                    <td>$1,057</td>
+                    <td align="right">60.7</td>
+                    <td align="right">41.5</td>
+                    <td align="right">40.7</td>
+                    <td align="right">4.2</td>
+                    <td align="right">1213123</td>
+                    <td align="right">23.9</td>
+                    <td align="right">41.7661</td>
+                    <td align="right">-72.6834</td>
+                    </tr>
+                    <tr>
+                    <td align="right">48</td>
+                    <td>Lancaster</td>
+                    <td>Pennsylvania</td>
+                    <td>$43,760</td>
+                    <td>$196,025</td>
+                    <td>$957</td>
+                    <td align="right">61.9</td>
+                    <td align="right">42.3</td>
+                    <td align="right">38.5</td>
+                    <td align="right">3.4</td>
+                    <td align="right">536494</td>
+                    <td align="right">23.1</td>
+                    <td align="right">40.0379</td>
+                    <td align="right">-76.3055</td>
+                    </tr>
+                    <tr>
+                    <td align="right">49</td>
+                    <td>Kansas City</td>
+                    <td>Missouri</td>
+                    <td>$49,460</td>
+                    <td>$201,900</td>
+                    <td>$894</td>
+                    <td align="right">64.6</td>
+                    <td align="right">44.5</td>
+                    <td align="right">37.1</td>
+                    <td align="right">3.4</td>
+                    <td align="right">2088830</td>
+                    <td align="right">23</td>
+                    <td align="right">39.1239</td>
+                    <td align="right">-94.5541</td>
+                    </tr>
+                    <tr>
+                    <td align="right">50</td>
+                    <td>Pittsburgh</td>
+                    <td>Pennsylvania</td>
+                    <td>$48,580</td>
+                    <td>$140,855</td>
+                    <td>$776</td>
+                    <td align="right">60.6</td>
+                    <td align="right">41.9</td>
+                    <td align="right">43</td>
+                    <td align="right">4.3</td>
+                    <td align="right">2348143</td>
+                    <td align="right">26.7</td>
+                    <td align="right">40.4396</td>
+                    <td align="right">-79.9763</td>
+                    </tr>
+                    <tr>
+                    <td align="right">51</td>
+                    <td>Columbus</td>
+                    <td>Ohio</td>
+                    <td>$50,020</td>
+                    <td>$182,600</td>
+                    <td>$887</td>
+                    <td align="right">62.5</td>
+                    <td align="right">44.2</td>
+                    <td align="right">35.8</td>
+                    <td align="right">3.8</td>
+                    <td align="right">2023695</td>
+                    <td align="right">23.7</td>
+                    <td align="right">39.9612</td>
+                    <td align="right">-82.9988</td>
+                    </tr>
+                    <tr>
+                    <td align="right">52</td>
+                    <td>Buffalo</td>
+                    <td>New York</td>
+                    <td>$48,180</td>
+                    <td>$144,300</td>
+                    <td>$763</td>
+                    <td align="right">56.3</td>
+                    <td align="right">40.2</td>
+                    <td align="right">40.8</td>
+                    <td align="right">4.7</td>
+                    <td align="right">1136670</td>
+                    <td align="right">21.5</td>
+                    <td align="right">42.9017</td>
+                    <td align="right">-78.8487</td>
+                    </tr>
+                    <tr>
+                    <td align="right">53</td>
+                    <td>Richmond</td>
+                    <td>Virginia</td>
+                    <td>$49,840</td>
+                    <td>$225,767</td>
+                    <td>$1,044</td>
+                    <td align="right">69.6</td>
+                    <td align="right">48.1</td>
+                    <td align="right">38.5</td>
+                    <td align="right">3.2</td>
+                    <td align="right">1270158</td>
+                    <td align="right">25.2</td>
+                    <td align="right">37.5295</td>
+                    <td align="right">-77.4756</td>
+                    </tr>
+                    <tr>
+                    <td align="right">54</td>
+                    <td>Syracuse</td>
+                    <td>New York</td>
+                    <td>$49,850</td>
+                    <td>$132,500</td>
+                    <td>$804</td>
+                    <td align="right">57.6</td>
+                    <td align="right">38.9</td>
+                    <td align="right">39.2</td>
+                    <td align="right">4.5</td>
+                    <td align="right">659262</td>
+                    <td align="right">21.2</td>
+                    <td align="right">43.0409</td>
+                    <td align="right">-76.1438</td>
+                    </tr>
+                    <tr>
+                    <td align="right">55</td>
+                    <td>Chattanooga</td>
+                    <td>Tennessee</td>
+                    <td>$42,870</td>
+                    <td>$164,550</td>
+                    <td>$771</td>
+                    <td align="right">71.6</td>
+                    <td align="right">50.1</td>
+                    <td align="right">40.1</td>
+                    <td align="right">3.5</td>
+                    <td align="right">548359</td>
+                    <td align="right">23.2</td>
+                    <td align="right">35.0657</td>
+                    <td align="right">-85.2487</td>
+                    </tr>
+                    <tr>
+                    <td align="right">56</td>
+                    <td>Tampa</td>
+                    <td>Florida</td>
+                    <td>$46,080</td>
+                    <td>$199,717</td>
+                    <td>$1,014</td>
+                    <td align="right">81.7</td>
+                    <td align="right">65.1</td>
+                    <td align="right">42</td>
+                    <td align="right">3.4</td>
+                    <td align="right">2978209</td>
+                    <td align="right">27.1</td>
+                    <td align="right">27.9942</td>
+                    <td align="right">-82.4451</td>
+                    </tr>
+                    <tr>
+                    <td align="right">57</td>
+                    <td>Atlanta</td>
+                    <td>Georgia</td>
+                    <td>$51,390</td>
+                    <td>$209,658</td>
+                    <td>$1,053</td>
+                    <td align="right">71.8</td>
+                    <td align="right">53.2</td>
+                    <td align="right">36.1</td>
+                    <td align="right">3.7</td>
+                    <td align="right">5700990</td>
+                    <td align="right">31.4</td>
+                    <td align="right">33.7627</td>
+                    <td align="right">-84.4225</td>
+                    </tr>
+                    <tr>
+                    <td align="right">58</td>
+                    <td>Rochester</td>
+                    <td>New York</td>
+                    <td>$49,570</td>
+                    <td>$135,042</td>
+                    <td>$848</td>
+                    <td align="right">57.1</td>
+                    <td align="right">39.3</td>
+                    <td align="right">39.9</td>
+                    <td align="right">4.4</td>
+                    <td align="right">1080653</td>
+                    <td align="right">21.3</td>
+                    <td align="right">43.168</td>
+                    <td align="right">-77.6162</td>
+                    </tr>
+                    <tr>
+                    <td align="right">59</td>
+                    <td>Lakeland</td>
+                    <td>Florida</td>
+                    <td>$40,560</td>
+                    <td>$171,967</td>
+                    <td>$913</td>
+                    <td align="right">85.2</td>
+                    <td align="right">62.7</td>
+                    <td align="right">40.4</td>
+                    <td align="right">4</td>
+                    <td align="right">652256</td>
+                    <td align="right">26</td>
+                    <td align="right">28.0557</td>
+                    <td align="right">-81.9545</td>
+                    </tr>
+                    <tr>
+                    <td align="right">60</td>
+                    <td>Honolulu</td>
+                    <td>Hawaii</td>
+                    <td>$54,030</td>
+                    <td>$581,658</td>
+                    <td>$1,653</td>
+                    <td align="right">84.4</td>
+                    <td align="right">70.9</td>
+                    <td align="right">37.6</td>
+                    <td align="right">2.1</td>
+                    <td align="right">990060</td>
+                    <td align="right">29.1</td>
+                    <td align="right">21.3294</td>
+                    <td align="right">-157.846</td>
+                    </tr>
+                    <tr>
+                    <td align="right">61</td>
+                    <td>Milwaukee</td>
+                    <td>Wisconsin</td>
+                    <td>$50,070</td>
+                    <td>$207,400</td>
+                    <td>$864</td>
+                    <td align="right">55.5</td>
+                    <td align="right">40</td>
+                    <td align="right">37.6</td>
+                    <td align="right">3.1</td>
+                    <td align="right">1575101</td>
+                    <td align="right">23.1</td>
+                    <td align="right">43.0642</td>
+                    <td align="right">-87.9673</td>
+                    </tr>
+                    <tr>
+                    <td align="right">62</td>
+                    <td>Worcester</td>
+                    <td>Massachusetts</td>
+                    <td>$53,110</td>
+                    <td>$249,275</td>
+                    <td>$973</td>
+                    <td align="right">56</td>
+                    <td align="right">39.6</td>
+                    <td align="right">40.2</td>
+                    <td align="right">3.7</td>
+                    <td align="right">934923</td>
+                    <td align="right">28.4</td>
+                    <td align="right">42.2626</td>
+                    <td align="right">-71.8023</td>
+                    </tr>
+                    <tr>
+                    <td align="right">63</td>
+                    <td>Orlando</td>
+                    <td>Florida</td>
+                    <td>$44,410</td>
+                    <td>$233,050</td>
+                    <td>$1,107</td>
+                    <td align="right">82.8</td>
+                    <td align="right">62.8</td>
+                    <td align="right">36.9</td>
+                    <td align="right">3.2</td>
+                    <td align="right">2390859</td>
+                    <td align="right">28.2</td>
+                    <td align="right">28.4772</td>
+                    <td align="right">-81.3369</td>
+                    </tr>
+                    <tr>
+                    <td align="right">64</td>
+                    <td>Louisville</td>
+                    <td>Kentucky</td>
+                    <td>$45,100</td>
+                    <td>$167,300</td>
+                    <td>$792</td>
+                    <td align="right">67.7</td>
+                    <td align="right">48.5</td>
+                    <td align="right">38.8</td>
+                    <td align="right">3.9</td>
+                    <td align="right">1278203</td>
+                    <td align="right">23.9</td>
+                    <td align="right">38.1663</td>
+                    <td align="right">-85.6485</td>
+                    </tr>
+                    <tr>
+                    <td align="right">65</td>
+                    <td>Spokane</td>
+                    <td>Washington</td>
+                    <td>$47,320</td>
+                    <td>$221,800</td>
+                    <td>$833</td>
+                    <td align="right">57.6</td>
+                    <td align="right">38.6</td>
+                    <td align="right">38.3</td>
+                    <td align="right">5.5</td>
+                    <td align="right">547688</td>
+                    <td align="right">22.1</td>
+                    <td align="right">47.6671</td>
+                    <td align="right">-117.433</td>
+                    </tr>
+                    <tr>
+                    <td align="right">66</td>
+                    <td>Greensboro</td>
+                    <td>North Carolina</td>
+                    <td>$43,310</td>
+                    <td>$142,758</td>
+                    <td>$777</td>
+                    <td align="right">69.2</td>
+                    <td align="right">49</td>
+                    <td align="right">38.8</td>
+                    <td align="right">4.1</td>
+                    <td align="right">751590</td>
+                    <td align="right">22.4</td>
+                    <td align="right">36.0956</td>
+                    <td align="right">-79.8268</td>
+                    </tr>
+                    <tr>
+                    <td align="right">67</td>
+                    <td>ColumbIowa</td>
+                    <td>South Carolina</td>
+                    <td>$43,840</td>
+                    <td>$144,192</td>
+                    <td>$889</td>
+                    <td align="right">75.6</td>
+                    <td align="right">53.9</td>
+                    <td align="right">36.3</td>
+                    <td align="right">3.5</td>
+                    <td align="right">808377</td>
+                    <td align="right">23.7</td>
+                    <td align="right">34.0376</td>
+                    <td align="right">-80.9037</td>
+                    </tr>
+                    <tr>
+                    <td align="right">68</td>
+                    <td>Oklahoma City</td>
+                    <td>Oklahoma</td>
+                    <td>$46,070</td>
+                    <td>$150,925</td>
+                    <td>$827</td>
+                    <td align="right">72.2</td>
+                    <td align="right">50.7</td>
+                    <td align="right">34.9</td>
+                    <td align="right">3.3</td>
+                    <td align="right">1353504</td>
+                    <td align="right">22.7</td>
+                    <td align="right">35.4676</td>
+                    <td align="right">-97.5137</td>
+                    </tr>
+                    <tr>
+                    <td align="right">69</td>
+                    <td>Dayton</td>
+                    <td>Ohio</td>
+                    <td>$48,700</td>
+                    <td>$126,325</td>
+                    <td>$770</td>
+                    <td align="right">61</td>
+                    <td align="right">42.8</td>
+                    <td align="right">39.4</td>
+                    <td align="right">4.3</td>
+                    <td align="right">800893</td>
+                    <td align="right">21.3</td>
+                    <td align="right">39.7797</td>
+                    <td align="right">-84.1998</td>
+                    </tr>
+                    <tr>
+                    <td align="right">70</td>
+                    <td>Anchorage</td>
+                    <td>Alaska</td>
+                    <td>$58,980</td>
+                    <td>$259,900</td>
+                    <td>$1,237</td>
+                    <td align="right">9.3</td>
+                    <td align="right">43.9</td>
+                    <td align="right">33.5</td>
+                    <td align="right">6.1</td>
+                    <td align="right">399360</td>
+                    <td align="right">22.1</td>
+                    <td align="right">61.1508</td>
+                    <td align="right">-149.109</td>
+                    </tr>
+                    <tr>
+                    <td align="right">71</td>
+                    <td>Las Vegas</td>
+                    <td>Nevada</td>
+                    <td>$44,450</td>
+                    <td>$271,767</td>
+                    <td>$1,048</td>
+                    <td align="right">80</td>
+                    <td align="right">58.6</td>
+                    <td align="right">36.9</td>
+                    <td align="right">4.8</td>
+                    <td align="right">2112436</td>
+                    <td align="right">24.5</td>
+                    <td align="right">36.2333</td>
+                    <td align="right">-115.265</td>
+                    </tr>
+                    <tr>
+                    <td align="right">72</td>
+                    <td>Augusta</td>
+                    <td>Georgia</td>
+                    <td>$44,020</td>
+                    <td>$147,427</td>
+                    <td>$809</td>
+                    <td align="right">76.8</td>
+                    <td align="right">50.9</td>
+                    <td align="right">37.2</td>
+                    <td align="right">4.1</td>
+                    <td align="right">589519</td>
+                    <td align="right">23.7</td>
+                    <td align="right">33.3645</td>
+                    <td align="right">-82.0708</td>
+                    </tr>
+                    <tr>
+                    <td align="right">73</td>
+                    <td>Santa Barbara</td>
+                    <td>California</td>
+                    <td>$54,320</td>
+                    <td>$463,750</td>
+                    <td>$1,496</td>
+                    <td align="right">73</td>
+                    <td align="right">54</td>
+                    <td align="right">33.7</td>
+                    <td align="right">3.9</td>
+                    <td align="right">442996</td>
+                    <td align="right">19.4</td>
+                    <td align="right">34.4285</td>
+                    <td align="right">-119.72</td>
+                    </tr>
+                    <tr>
+                    <td align="right">74</td>
+                    <td>Santa Rosa</td>
+                    <td>California</td>
+                    <td>$53,890</td>
+                    <td>$629,917</td>
+                    <td>$1,456</td>
+                    <td align="right">71</td>
+                    <td align="right">44.2</td>
+                    <td align="right">41.4</td>
+                    <td align="right">2.7</td>
+                    <td align="right">500943</td>
+                    <td align="right">25.2</td>
+                    <td align="right">38.4458</td>
+                    <td align="right">-122.707</td>
+                    </tr>
+                    <tr>
+                    <td align="right">75</td>
+                    <td>Myrtle Beach</td>
+                    <td>South Carolina</td>
+                    <td>$35,890</td>
+                    <td>$181,800</td>
+                    <td>$883</td>
+                    <td align="right">81</td>
+                    <td align="right">39</td>
+                    <td align="right">46.5</td>
+                    <td align="right">4.6</td>
+                    <td align="right">432772</td>
+                    <td align="right">22.5</td>
+                    <td align="right">33.7096</td>
+                    <td align="right">-78.8842</td>
+                    </tr>
+                    <tr>
+                    <td align="right">76</td>
+                    <td>Tucson</td>
+                    <td>Arizona</td>
+                    <td>$46,140</td>
+                    <td>$203,458</td>
+                    <td>$861</td>
+                    <td align="right">83.1</td>
+                    <td align="right">55.7</td>
+                    <td align="right">38.2</td>
+                    <td align="right">4.4</td>
+                    <td align="right">1007257</td>
+                    <td align="right">24.5</td>
+                    <td align="right">32.1545</td>
+                    <td align="right">-110.878</td>
+                    </tr>
+                    <tr>
+                    <td align="right">77</td>
+                    <td>Salem</td>
+                    <td>Oregon</td>
+                    <td>$47,240</td>
+                    <td>$269,367</td>
+                    <td>$877</td>
+                    <td align="right">83.6</td>
+                    <td align="right">42.4</td>
+                    <td align="right">36.3</td>
+                    <td align="right">4.2</td>
+                    <td align="right">410119</td>
+                    <td align="right">23.5</td>
+                    <td align="right">44.9232</td>
+                    <td align="right">-123.024</td>
+                    </tr>
+                    <tr>
+                    <td align="right">78</td>
+                    <td>Port St. Lucie</td>
+                    <td>Florida</td>
+                    <td>$42,500</td>
+                    <td>$211,083</td>
+                    <td>$1,074</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">47.1</td>
+                    <td align="right">4.1</td>
+                    <td align="right">454482</td>
+                    <td align="right">27.2</td>
+                    <td align="right">27.273</td>
+                    <td align="right">-80.3582</td>
+                    </tr>
+                    <tr>
+                    <td align="right">79</td>
+                    <td>Wichita</td>
+                    <td>Kansas</td>
+                    <td>$43,880</td>
+                    <td>$143,850</td>
+                    <td>$769</td>
+                    <td align="right">67.6</td>
+                    <td align="right">45.5</td>
+                    <td align="right">35.8</td>
+                    <td align="right">3.7</td>
+                    <td align="right">642339</td>
+                    <td align="right">19.5</td>
+                    <td align="right">37.6897</td>
+                    <td align="right">-97.3441</td>
+                    </tr>
+                    <tr>
+                    <td align="right">80</td>
+                    <td>Springfield</td>
+                    <td>Missouri</td>
+                    <td>$40,560</td>
+                    <td>$146,416</td>
+                    <td>$721</td>
+                    <td align="right">66.1</td>
+                    <td align="right">47.8</td>
+                    <td align="right">36.6</td>
+                    <td align="right">2.8</td>
+                    <td align="right">455133</td>
+                    <td align="right">21.8</td>
+                    <td align="right">37.1943</td>
+                    <td align="right">-93.2915</td>
+                    </tr>
+                    <tr>
+                    <td align="right">81</td>
+                    <td>St Louis</td>
+                    <td>Missouri</td>
+                    <td>$49,180</td>
+                    <td>$157,725</td>
+                    <td>$858</td>
+                    <td align="right">66.1</td>
+                    <td align="right">47.8</td>
+                    <td align="right">39</td>
+                    <td align="right">3.4</td>
+                    <td align="right">2804998</td>
+                    <td align="right">25.6</td>
+                    <td align="right">38.627</td>
+                    <td align="right">-90.1994</td>
+                    </tr>
+                    <tr>
+                    <td align="right">82</td>
+                    <td>Sacramento</td>
+                    <td>California</td>
+                    <td>$55,010</td>
+                    <td>$389,858</td>
+                    <td>$1,157</td>
+                    <td align="right">73.8</td>
+                    <td align="right">47.6</td>
+                    <td align="right">37</td>
+                    <td align="right">3.7</td>
+                    <td align="right">2268005</td>
+                    <td align="right">26.8</td>
+                    <td align="right">38.5667</td>
+                    <td align="right">-121.468</td>
+                    </tr>
+                    <tr>
+                    <td align="right">83</td>
+                    <td>Tulsa</td>
+                    <td>Oklahoma</td>
+                    <td>$45,260</td>
+                    <td>$149,000</td>
+                    <td>$804</td>
+                    <td align="right">71.3</td>
+                    <td align="right">50.1</td>
+                    <td align="right">36.8</td>
+                    <td align="right">3.6</td>
+                    <td align="right">977869</td>
+                    <td align="right">21.5</td>
+                    <td align="right">36.1284</td>
+                    <td align="right">-95.9043</td>
+                    </tr>
+                    <tr>
+                    <td align="right">84</td>
+                    <td>Reading</td>
+                    <td>Pennsylvania</td>
+                    <td>$46,100</td>
+                    <td>$151,900</td>
+                    <td>$885</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">39.9</td>
+                    <td align="right">4.1</td>
+                    <td align="right">415500</td>
+                    <td align="right">24.9</td>
+                    <td align="right">40.3356</td>
+                    <td align="right">-75.9269</td>
+                    </tr>
+                    <tr>
+                    <td align="right">85</td>
+                    <td>Cleveland</td>
+                    <td>Ohio</td>
+                    <td>$45,589</td>
+                    <td>$132,516</td>
+                    <td>$782</td>
+                    <td align="right">59.2</td>
+                    <td align="right">45.9</td>
+                    <td align="right">41</td>
+                    <td align="right">4.9</td>
+                    <td align="right">2766162</td>
+                    <td align="right">24.3</td>
+                    <td align="right">41.4767</td>
+                    <td align="right">-81.6805</td>
+                    </tr>
+                    <tr>
+                    <td align="right">86</td>
+                    <td>Springfield</td>
+                    <td>Massachusetts</td>
+                    <td>$50,930</td>
+                    <td>$199,650</td>
+                    <td>$903</td>
+                    <td align="right">59.2</td>
+                    <td align="right">37.3</td>
+                    <td align="right">38.2</td>
+                    <td align="right">4.2</td>
+                    <td align="right">630385</td>
+                    <td align="right">22.8</td>
+                    <td align="right">42.1155</td>
+                    <td align="right">-72.5395</td>
+                    </tr>
+                    <tr>
+                    <td align="right">87</td>
+                    <td>York</td>
+                    <td>Pennsylvania</td>
+                    <td>$44,740</td>
+                    <td>$164,258</td>
+                    <td>$915</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">41</td>
+                    <td align="right">3.8</td>
+                    <td align="right">442216</td>
+                    <td align="right">27.1</td>
+                    <td align="right">39.9651</td>
+                    <td align="right">-76.7315</td>
+                    </tr>
+                    <tr>
+                    <td align="right">88</td>
+                    <td>Little Rock</td>
+                    <td>Arkansas</td>
+                    <td>$43,780</td>
+                    <td>$147,150</td>
+                    <td>$805</td>
+                    <td align="right">72.8</td>
+                    <td align="right">52.4</td>
+                    <td align="right">36.5</td>
+                    <td align="right">3.3</td>
+                    <td align="right">730346</td>
+                    <td align="right">22.9</td>
+                    <td align="right">34.7255</td>
+                    <td align="right">-92.358</td>
+                    </tr>
+                    <tr>
+                    <td align="right">89</td>
+                    <td>BirMinnesotagham</td>
+                    <td>Alabama</td>
+                    <td>$47,300</td>
+                    <td>$171,450</td>
+                    <td>$831</td>
+                    <td align="right">73.8</td>
+                    <td align="right">52.6</td>
+                    <td align="right">38.4</td>
+                    <td align="right">3.6</td>
+                    <td align="right">1144097</td>
+                    <td align="right">26.2</td>
+                    <td align="right">33.5277</td>
+                    <td align="right">-86.7987</td>
+                    </tr>
+                    <tr>
+                    <td align="right">90</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>$63,079</td>
+                    <td>$386,862</td>
+                    <td>$1,345</td>
+                    <td align="right">62</td>
+                    <td align="right">47.9</td>
+                    <td align="right">38.3</td>
+                    <td align="right">4</td>
+                    <td align="right">21139370</td>
+                    <td align="right">36</td>
+                    <td align="right">40.7128</td>
+                    <td align="right">-74.006</td>
+                    </tr>
+                    <tr>
+                    <td align="right">91</td>
+                    <td>Providence</td>
+                    <td>Rhode Island</td>
+                    <td>$52,220</td>
+                    <td>$228,804</td>
+                    <td>$925</td>
+                    <td align="right">60.6</td>
+                    <td align="right">42.5</td>
+                    <td align="right">40.2</td>
+                    <td align="right">4.1</td>
+                    <td align="right">1613154</td>
+                    <td align="right">25.8</td>
+                    <td align="right">41.823</td>
+                    <td align="right">-71.4187</td>
+                    </tr>
+                    <tr>
+                    <td align="right">92</td>
+                    <td>Detroit</td>
+                    <td>Michigan</td>
+                    <td>$52,100</td>
+                    <td>$156,508</td>
+                    <td>$890</td>
+                    <td align="right">57.8</td>
+                    <td align="right">42.7</td>
+                    <td align="right">40</td>
+                    <td align="right">4.3</td>
+                    <td align="right">4304613</td>
+                    <td align="right">26.8</td>
+                    <td align="right">42.3834</td>
+                    <td align="right">-83.1024</td>
+                    </tr>
+                    <tr>
+                    <td align="right">93</td>
+                    <td>Allentown</td>
+                    <td>Pennsylvania</td>
+                    <td>$46,920</td>
+                    <td>$174,858</td>
+                    <td>$990</td>
+                    <td align="right">61.4</td>
+                    <td align="right">40.8</td>
+                    <td align="right">41.3</td>
+                    <td align="right">4.5</td>
+                    <td align="right">832790</td>
+                    <td align="right">27.7</td>
+                    <td align="right">40.6023</td>
+                    <td align="right">-75.4714</td>
+                    </tr>
+                    <tr>
+                    <td align="right">94</td>
+                    <td>Toledo</td>
+                    <td>Ohio</td>
+                    <td>$44,180</td>
+                    <td>$117,850</td>
+                    <td>$710</td>
+                    <td align="right">59.9</td>
+                    <td align="right">40.6</td>
+                    <td align="right">37.3</td>
+                    <td align="right">4.9</td>
+                    <td align="right">605204</td>
+                    <td align="right">20.7</td>
+                    <td align="right">41.6639</td>
+                    <td align="right">-83.5822</td>
+                    </tr>
+                    <tr>
+                    <td align="right">95</td>
+                    <td>New Haven</td>
+                    <td>Connecticut</td>
+                    <td>$55,450</td>
+                    <td>$204,475</td>
+                    <td>$1,100</td>
+                    <td align="right">60.6</td>
+                    <td align="right">43.7</td>
+                    <td align="right">40.1</td>
+                    <td align="right">4.1</td>
+                    <td align="right">862127</td>
+                    <td align="right">24.9</td>
+                    <td align="right">41.3112</td>
+                    <td align="right">-72.9246</td>
+                    </tr>
+                    <tr>
+                    <td align="right">96</td>
+                    <td>Lafayette</td>
+                    <td>Louisianna</td>
+                    <td>$39,940</td>
+                    <td>$165,500</td>
+                    <td>$769</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">35.4</td>
+                    <td align="right">4.9</td>
+                    <td align="right">467633</td>
+                    <td align="right">25.3</td>
+                    <td align="right">30.2084</td>
+                    <td align="right">-92.0323</td>
+                    </tr>
+                    <tr>
+                    <td align="right">97</td>
+                    <td>Youngstown</td>
+                    <td>Ohio</td>
+                    <td>$41,360</td>
+                    <td>$86,850</td>
+                    <td>$652</td>
+                    <td align="right">58.3</td>
+                    <td align="right">39.7</td>
+                    <td align="right">43.9</td>
+                    <td align="right">5.8</td>
+                    <td align="right">548821</td>
+                    <td align="right">22</td>
+                    <td align="right">41.0993</td>
+                    <td align="right">-80.6463</td>
+                    </tr>
+                    <tr>
+                    <td align="right">98</td>
+                    <td>Scranton</td>
+                    <td>Pennsylvania</td>
+                    <td>$41,980</td>
+                    <td>$100,600</td>
+                    <td>$745</td>
+                    <td align="right">58.7</td>
+                    <td align="right">40</td>
+                    <td align="right">42.8</td>
+                    <td align="right">5</td>
+                    <td align="right">557942</td>
+                    <td align="right">21.8</td>
+                    <td align="right">41.4044</td>
+                    <td align="right">-75.6649</td>
+                    </tr>
+                    <tr>
+                    <td align="right">99</td>
+                    <td>Daytona Beach</td>
+                    <td>Florida</td>
+                    <td>$38,710</td>
+                    <td>$192,817</td>
+                    <td>$990</td>
+                    <td align="right">80.1</td>
+                    <td align="right">61.6</td>
+                    <td align="right">47.1</td>
+                    <td align="right">3.7</td>
+                    <td align="right">623675</td>
+                    <td align="right">25.4</td>
+                    <td align="right">29.1994</td>
+                    <td align="right">-81.0982</td>
+                    </tr>
+                    <tr>
+                    <td align="right">100</td>
+                    <td>Baltimore</td>
+                    <td>Maryland</td>
+                    <td>$56,400</td>
+                    <td>$248,833</td>
+                    <td>$1,220</td>
+                    <td align="right">65</td>
+                    <td align="right">45.1</td>
+                    <td align="right">38.3</td>
+                    <td align="right">4.2</td>
+                    <td align="right">2792050</td>
+                    <td align="right">30.8</td>
+                    <td align="right">39.3051</td>
+                    <td align="right">-76.6144</td>
+                    </tr>
+                    <tr>
+                    <td align="right">101</td>
+                    <td>Killeen</td>
+                    <td>Texas</td>
+                    <td>$41,770</td>
+                    <td>$155,500</td>
+                    <td>$888</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">31.1</td>
+                    <td align="right">4</td>
+                    <td align="right">432797</td>
+                    <td align="right">21.1</td>
+                    <td align="right">31.0755</td>
+                    <td align="right">-97.7297</td>
+                    </tr>
+                    <tr>
+                    <td align="right">102</td>
+                    <td>PhiladelphIowa</td>
+                    <td>Pennsylvania</td>
+                    <td>$54,940</td>
+                    <td>$200,142</td>
+                    <td>$1,075</td>
+                    <td align="right">64.6</td>
+                    <td align="right">47.1</td>
+                    <td align="right">38.6</td>
+                    <td align="right">4.2</td>
+                    <td align="right">6065644</td>
+                    <td align="right">29.5</td>
+                    <td align="right">40.0077</td>
+                    <td align="right">-75.1339</td>
+                    </tr>
+                    <tr>
+                    <td align="right">103</td>
+                    <td>VirginIowa Beach</td>
+                    <td>Virginia</td>
+                    <td>$47,410</td>
+                    <td>$220,275</td>
+                    <td>$1,124</td>
+                    <td align="right">68.2</td>
+                    <td align="right">52</td>
+                    <td align="right">35.7</td>
+                    <td align="right">3.3</td>
+                    <td align="right">1717708</td>
+                    <td align="right">24.3</td>
+                    <td align="right">36.7335</td>
+                    <td align="right">-76.0435</td>
+                    </tr>
+                    <tr>
+                    <td align="right">104</td>
+                    <td>Chicago</td>
+                    <td>Illinois</td>
+                    <td>$54,160</td>
+                    <td>$221,983</td>
+                    <td>$1,048</td>
+                    <td align="right">59</td>
+                    <td align="right">40.7</td>
+                    <td align="right">37</td>
+                    <td align="right">4.2</td>
+                    <td align="right">9549229</td>
+                    <td align="right">31.6</td>
+                    <td align="right">41.8373</td>
+                    <td align="right">-87.6862</td>
+                    </tr>
+                    <tr>
+                    <td align="right">105</td>
+                    <td>Corpus Christi</td>
+                    <td>Texas</td>
+                    <td>$44,710</td>
+                    <td> </td>
+                    <td>$940</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">35.7</td>
+                    <td align="right">5</td>
+                    <td align="right">450183</td>
+                    <td align="right">20.2</td>
+                    <td align="right">27.7261</td>
+                    <td align="right">-97.3755</td>
+                    </tr>
+                    <tr>
+                    <td align="right">106</td>
+                    <td>Albuquerque</td>
+                    <td>NM</td>
+                    <td>$46,400</td>
+                    <td>$201,900</td>
+                    <td>$850</td>
+                    <td align="right">68.7</td>
+                    <td align="right">45.4</td>
+                    <td align="right">37.7</td>
+                    <td align="right">4.6</td>
+                    <td align="right">905049</td>
+                    <td align="right">23.4</td>
+                    <td align="right">35.1053</td>
+                    <td align="right">-106.646</td>
+                    </tr>
+                    <tr>
+                    <td align="right">107</td>
+                    <td>Los Angeles</td>
+                    <td>California</td>
+                    <td>$53,803</td>
+                    <td>$526,214</td>
+                    <td>$1,362</td>
+                    <td align="right">69</td>
+                    <td align="right">56.2</td>
+                    <td align="right">35.9</td>
+                    <td align="right">4.2</td>
+                    <td align="right">18585594</td>
+                    <td align="right">30.4</td>
+                    <td align="right">34.1139</td>
+                    <td align="right">-118.407</td>
+                    </tr>
+                    <tr>
+                    <td align="right">108</td>
+                    <td>Beaumont</td>
+                    <td>Texas</td>
+                    <td>$47,900</td>
+                    <td> </td>
+                    <td>$797</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">36.9</td>
+                    <td align="right">6.2</td>
+                    <td align="right">408663</td>
+                    <td align="right">22.3</td>
+                    <td align="right">30.085</td>
+                    <td align="right">-94.1451</td>
+                    </tr>
+                    <tr>
+                    <td align="right">109</td>
+                    <td>Baton Rouge</td>
+                    <td>Louisianna</td>
+                    <td>$44,500</td>
+                    <td>$179,350</td>
+                    <td>$873</td>
+                    <td align="right">78.9</td>
+                    <td align="right">57.9</td>
+                    <td align="right">34.9</td>
+                    <td align="right">4.3</td>
+                    <td align="right">828741</td>
+                    <td align="right">26.6</td>
+                    <td align="right">30.4419</td>
+                    <td align="right">-91.131</td>
+                    </tr>
+                    <tr>
+                    <td align="right">110</td>
+                    <td>El Paso</td>
+                    <td>Texas</td>
+                    <td>$38,610</td>
+                    <td>$151,300</td>
+                    <td>$789</td>
+                    <td align="right">77.4</td>
+                    <td align="right">51.6</td>
+                    <td align="right">31.9</td>
+                    <td align="right">4.3</td>
+                    <td align="right">838527</td>
+                    <td align="right">23.4</td>
+                    <td align="right">31.8479</td>
+                    <td align="right">-106.431</td>
+                    </tr>
+                    <tr>
+                    <td align="right">111</td>
+                    <td>Jackson</td>
+                    <td>Mississippi</td>
+                    <td>$42,770</td>
+                    <td> </td>
+                    <td>$838</td>
+                    <td align="right">75.5</td>
+                    <td align="right">53.6</td>
+                    <td align="right">36</td>
+                    <td align="right">4.1</td>
+                    <td align="right">578565</td>
+                    <td align="right">24.4</td>
+                    <td align="right">32.3163</td>
+                    <td align="right">-90.2124</td>
+                    </tr>
+                    <tr>
+                    <td align="right">112</td>
+                    <td>McAllen</td>
+                    <td>Texas</td>
+                    <td>$36,380</td>
+                    <td> </td>
+                    <td>$699</td>
+                    <td align="right">85.9</td>
+                    <td align="right">65.2</td>
+                    <td align="right">28.9</td>
+                    <td align="right">6.6</td>
+                    <td align="right">839539</td>
+                    <td align="right">21.9</td>
+                    <td align="right">26.2034</td>
+                    <td align="right">-98.23</td>
+                    </tr>
+                    <tr>
+                    <td align="right">113</td>
+                    <td>MIowami</td>
+                    <td>Florida</td>
+                    <td>$46,860</td>
+                    <td>$247,113</td>
+                    <td>$1,232</td>
+                    <td align="right">84.3</td>
+                    <td align="right">70</td>
+                    <td align="right">40.7</td>
+                    <td align="right">3.7</td>
+                    <td align="right">6019790</td>
+                    <td align="right">28.9</td>
+                    <td align="right">25.7839</td>
+                    <td align="right">-80.2102</td>
+                    </tr>
+                    <tr>
+                    <td align="right">114</td>
+                    <td>New Orleans</td>
+                    <td>Louisianna</td>
+                    <td>$43,310</td>
+                    <td>$193,575</td>
+                    <td>$947</td>
+                    <td align="right">78.2</td>
+                    <td align="right">61.1</td>
+                    <td align="right">37.7</td>
+                    <td align="right">4.5</td>
+                    <td align="right">1260660</td>
+                    <td align="right">25.8</td>
+                    <td align="right">30.0687</td>
+                    <td align="right">-89.9288</td>
+                    </tr>
+                    <tr>
+                    <td align="right">115</td>
+                    <td>Flint</td>
+                    <td>Michigan</td>
+                    <td>$45,820</td>
+                    <td>$121,900</td>
+                    <td>$738</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">40.1</td>
+                    <td align="right">5.1</td>
+                    <td align="right">410881</td>
+                    <td align="right">26</td>
+                    <td align="right">43.0235</td>
+                    <td align="right">-83.6922</td>
+                    </tr>
+                    <tr>
+                    <td align="right">116</td>
+                    <td>Brownsville</td>
+                    <td>Texas</td>
+                    <td>$35,240</td>
+                    <td> </td>
+                    <td>$683</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">31.4</td>
+                    <td align="right">6.2</td>
+                    <td align="right">420201</td>
+                    <td align="right">20.2</td>
+                    <td align="right">25.998</td>
+                    <td align="right">-97.4565</td>
+                    </tr>
+                    <tr>
+                    <td align="right">117</td>
+                    <td>Salinas</td>
+                    <td>California</td>
+                    <td>$48,290</td>
+                    <td>$581,342</td>
+                    <td>$1,338</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">33.9</td>
+                    <td align="right">6.4</td>
+                    <td align="right">433168</td>
+                    <td align="right">22.4</td>
+                    <td align="right">36.6884</td>
+                    <td align="right">-121.632</td>
+                    </tr>
+                    <tr>
+                    <td align="right">118</td>
+                    <td>Memphis</td>
+                    <td>Tennessee</td>
+                    <td>$43,950</td>
+                    <td>$151,900</td>
+                    <td>$883</td>
+                    <td align="right">72.4</td>
+                    <td align="right">53.6</td>
+                    <td align="right">35.9</td>
+                    <td align="right">4.1</td>
+                    <td align="right">1344058</td>
+                    <td align="right">24.1</td>
+                    <td align="right">35.1046</td>
+                    <td align="right">-89.9773</td>
+                    </tr>
+                    <tr>
+                    <td align="right">119</td>
+                    <td>Fresno</td>
+                    <td>California</td>
+                    <td>$45,510</td>
+                    <td>$260,733</td>
+                    <td>$931</td>
+                    <td align="right">76.7</td>
+                    <td align="right">51.9</td>
+                    <td align="right">31.8</td>
+                    <td align="right">7.4</td>
+                    <td align="right">971616</td>
+                    <td align="right">22.4</td>
+                    <td align="right">36.7831</td>
+                    <td align="right">-119.794</td>
+                    </tr>
+                    <tr>
+                    <td align="right">120</td>
+                    <td>Modesto</td>
+                    <td>California</td>
+                    <td>$46,176</td>
+                    <td>$289,168</td>
+                    <td>$1,011</td>
+                    <td align="right">76</td>
+                    <td align="right">51.3</td>
+                    <td align="right">32.9</td>
+                    <td align="right">7</td>
+                    <td align="right">803074</td>
+                    <td align="right">27.8</td>
+                    <td align="right">37.6374</td>
+                    <td align="right">-121.003</td>
+                    </tr>
+                    <tr>
+                    <td align="right">121</td>
+                    <td>Mobile</td>
+                    <td>Alabama</td>
+                    <td>$43,830</td>
+                    <td>$126,976</td>
+                    <td>$828</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">37.3</td>
+                    <td align="right">4.7</td>
+                    <td align="right">414328</td>
+                    <td align="right">24.8</td>
+                    <td align="right">30.6782</td>
+                    <td align="right">-88.1163</td>
+                    </tr>
+                    <tr>
+                    <td align="right">122</td>
+                    <td>Shreveport</td>
+                    <td>Louisianna</td>
+                    <td>$39,400</td>
+                    <td> </td>
+                    <td>$789</td>
+                    <td align="right"></td>
+                    <td align="right"></td>
+                    <td align="right">36.7</td>
+                    <td align="right">5.2</td>
+                    <td align="right">443974</td>
+                    <td align="right">21.9</td>
+                    <td align="right">32.4659</td>
+                    <td align="right">-93.7959</td>
+                    </tr>
+                    <tr>
+                    <td align="right">123</td>
+                    <td>Stockton</td>
+                    <td>California</td>
+                    <td>$46,770</td>
+                    <td>$352,350</td>
+                    <td>$1,100</td>
+                    <td align="right">74.3</td>
+                    <td align="right">48.3</td>
+                    <td align="right">33.9</td>
+                    <td align="right">5.9</td>
+                    <td align="right">724153</td>
+                    <td align="right">32</td>
+                    <td align="right">37.9766</td>
+                    <td align="right">-121.311</td>
+                    </tr>
+                    <tr>
+                    <td align="right">124</td>
+                    <td>Bakersfield</td>
+                    <td>California</td>
+                    <td>$47,680</td>
+                    <td>$226,908</td>
+                    <td>$933</td>
+                    <td align="right">76.8</td>
+                    <td align="right">53.5</td>
+                    <td align="right">31.3</td>
+                    <td align="right">8</td>
+                    <td align="right">878744</td>
+                    <td align="right">23.4</td>
+                    <td align="right">35.353</td>
+                    <td align="right">-119.036</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+<script>
+
+
+
+
+
+
+    $(document).ready(function () {
+        $('#search').keyup(function () {
+            search_table($(this).val());
+        });
+        function search_table(value) {
+            $('#employee_table tr').each(function () {
+                var found = 'false';
+                $(this).each(function () {
+                    if (($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0) || ($(this).attr('id') === 'tr-header')) {
+                        found = 'true';
+                    }
+                });
+                if ((found == 'true') && value) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            });
+        }
+    });
+
+
+
+
+</script>
+</html>

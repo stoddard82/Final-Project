@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/icon.png">
+    <title>City Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Custom styles for this template -->
+
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid" style="padding: 0px;">
+        <main role="main">
+
+            <div id="content">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">New Search</a>
+                    <hr width="100%" size="4" noshade="noshade" color="black">
+                    <a href="Salary_Pop.html">Salary & Population</a>
+                    <a href="Posi_unemp.html">Positions & Unemployment</a>
+                    <a href="Living.html">Cost of Living</a>
+                    <a href="Com_clim.html">Commute & Climate</a>
+                    <a href="AD.html">Video</a>
+                </div>
+
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                </div>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidebar").style.width = "250px";
+                        document.getElementById("main").style.marginright = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidebar").style.width = "0";
+                        document.getElementById("main").style.marginright = "0";
+                    }
+                </script>
+                <h1>City Search</h1>
+                <div style="width: 300px; position: center;">
+                    <input type="text" name="search" class="form-control" placeholder="City"
+                        id="search" style="position: absolute; left: 40%; right:40%; width: 300px;"></input>
+                </div>
+                <br>
+                <br>
+
+                <head>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                    <link rel="stylesheet"
+                        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+                </head>
+            </div>
+                <body>
+                    </div>
+                        <div class="table-responsive" style="background-color:  rgb(250, 239, 227); padding-left: 200px; padding-right: 200px;">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="search_table">
+                                </table>
+                            </div>
+                        </div>
+                </body>
+            
+        </main>
+    </div>
+    <script src="/static/js/search.js"></script>
+</body>
+
+</html>

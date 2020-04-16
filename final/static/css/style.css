@@ -1,0 +1,184 @@
+center {
+  text-align: center;
+  display: block;
+  margin: 10px auto 10px auto;
+}
+body {
+  padding:0px;
+  margin: 0;
+  align-content: center;
+  background-color: rgb(250, 239, 227);  
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(250, 239, 227);
+}
+
+svg {
+color: black;
+}
+
+#content{
+  background-image: url(/static/images/work4.jpg); 
+  height: 100%; 
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  background-color: rgb(250, 239, 227)
+}
+
+#container{
+  background-color: rgb(250, 239, 227);
+}
+
+#row h1{
+  text-align: center;
+  color:rgb(131, 164, 202);
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: auto;
+  padding-bottom: 10px;
+}
+
+
+#content h1{
+  text-align: center;
+  color:white;
+  text-shadow: 2px 2px 8px #000;
+  font-size: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 50px; 
+  width: auto;
+  margin-top: -5px;
+  padding-bottom: 150px;
+}
+
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; 
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  background-color: rgb(26, 26, 73);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 60px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; 
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background:  #39a0ca;
+  overflow-x: hidden;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: White;
+  display: block;
+}
+
+.sidenav a:hover {
+  color:#161748;
+}
+
+
+h3 {
+  padding-left: 8px;
+  font-size: 25px;
+}
+
+#container h4 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/*Searchbar settings*/
+.box{
+  width: 100%;
+  text-align: center;
+}
+
+#search {
+  margin: 0 auto;
+  display: block;
+}
+
+.bar-plot{
+  float: right;
+}
+
+.container-fluid {
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: rgb(250, 239, 227);
+}
+
+

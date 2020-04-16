@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/images/icon.png">
+    <title>City Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar" style="background-color: rgb(250, 239, 227)">
+                <div class="sidenav">
+                    <h2 style="text-align: center; font-family: Arial, Gadget, sans-serif; color: black; font-weight: bold;">City Search</h2>
+                    <a href="/index.html">New Search</a>
+                    <hr width="90%" size="4" noshade="noshade" color="black">
+                    <h3 style="text-align: left; font-family: Arial, Gadget, sans-serif; color: black; font-weight: bold;">Per city</h3>
+                    <a href="Salary_Pop.html">Salary & Population</a>
+                    <a href="Posi_unemp.html">Positions & Unemployment</a>
+                    <a href="Living.html">Cost of Living</a>
+                    <a href="Com_clim.html">Commute & Climate</a>
+                    <hr width="90%" size="4" noshade="noshade" color="black">
+                </div>
+            </nav>
+        </div>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <h1 style="color: #478559" id="showcity" > </h1>
+            <div class="row">
+                <div class="col">
+                    <h4 style="color: #39a0ca;"> Facts and Numbers </h4>
+                    <hr width="100%" size="4"  noshade="noshade" color="black">
+                    <table>
+                        <tr height="40"><th>Average Salary</th><td style="text-align: right" id="showaveragesalary"></td></tr>
+                        <tr height="40"><th>Median House Price</th><td  style="text-align: right" id="showmediahousingcost"></td></tr>
+                        <tr height="40"><th>Average House Price</th><td style="text-align: right" id="showaveragehouseprice"></td></tr>
+                        <tr height="40"><th>Median Rent</th><td style="text-align: right" id="showmedianrent"></td></tr>
+                        <tr height="40"><th>Unemployment Rate</th><td  style="text-align: right" id="showunemploymentrate"></td></tr>
+                        <tr height="40"><th>Annual Mortgage</th><td  style="text-align: right" id="showmonthlymortgage"></td></tr>                        
+                        <tr height="40"><th>Annual Rent</th><td  style="text-align: right" id="showannualrent"></td></tr>
+                        <tr height="40"><th>Data Analyst Salary</th><td  style="text-align: right" id="showsalary"></td></tr>
+                        <tr height="40"><th>Data Analyst Positions</th><td  style="text-align: right" id="showpositions"></td></tr>
+                        <tr height="40"><th>Average High Temperature F</th><td style="text-align: right" id="showhightemp"></td></tr>
+                        <tr height="40"><th>Average Low Temperature F</th><td  style="text-align: right" id="showlowtemp"></td></tr>                        
+                        <tr height="40"><th>Median Age</th><td  style="text-align: right" id="showmedianage"></td></tr>                        
+                    </table>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div
+                                class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                                <div id="bar-plot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="unemployment"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster-->
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="/static/js/graphsplot.js"></script>
+    <script src="/static/js/unemployment.js"></script>
+    <script type="text/javascript" src="/static/js/citypage.js"></script>
+
+</body>
+
+</html>

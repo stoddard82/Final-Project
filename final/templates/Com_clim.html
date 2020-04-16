@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/images/icon.png">
+    <title>City Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar" style="background-color: rgb(250, 239, 227)">
+                <div class="sidenav">
+                    <h2 style="text-align: center; font-family: Arial, Gadget, sans-serif; color: black; font-weight: bold;">City Search</h2>
+                    <a href="/index.html">New Search</a>
+                    <hr width="90%" size="4" noshade="noshade" color="black">
+                    <h3 style="text-align: left; font-family: Arial, Gadget, sans-serif; color: black; font-weight: bold;">Per city</h3>
+                    <a href="Salary_Pop.html">Salary & Population</a>
+                    <a href="Posi_unemp.html">Positions & Unemployment</a>
+                    <a href="Living.html">Cost of Living</a>
+                    <a href="Com_clim.html">Commute & Climate</a>
+                    <hr width="90%" size="4" noshade="noshade" color="black">
+                </div>
+            </nav>
+            
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Commute and Climate Per City</h1>
+
+                </div>
+                <div id="chartDiv" style="width:600px;height:4px;"></div>
+                <div class='tableauPlaceholder' id='viz1586017881242' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_15856025829740&#47;CommuteandClimatePerCity&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='FinalProject_15856025829740&#47;CommuteandClimatePerCity' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_15856025829740&#47;CommuteandClimatePerCity&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' /></object></div>
+                <script
+                    type='text/javascript'> var divElement = document.getElementById('viz1586017881242'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1277px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+            </main>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
